@@ -10,21 +10,17 @@ const Sample = () => {
   const [Dval,setDval]=useState(0)
   const [Cval,setCval]=useState(0)
   const [count, setCount] = useState(0)
+  const [trans,setTrans]=useState(-150);
   const navigate= useNavigate();
-
-
-
-    
   
   return (
     <div className='movement'>
-      <div><Movement/></div>
+      <div><Movement trans={trans}setTrans={setTrans}/></div>
       
       <div className='button-group'>
       <button 
-        
         onClick={()=>{
-        
+        setTrans(788)
         setCval(Dval)
         setDval(4);
         
@@ -36,6 +32,7 @@ const Sample = () => {
     <button 
     
     onClick={()=>{
+      setTrans(626)
         setCval(Dval)
         setDval(3);
         
@@ -44,6 +41,7 @@ const Sample = () => {
     <button 
     
     onClick={()=>{
+      setTrans(464)
         setCval(Dval)
         setDval(2);
         
@@ -52,6 +50,7 @@ const Sample = () => {
     <button 
     
     onClick={()=>{
+      setTrans(302)
       setCval(Dval)
       setDval(1);
       
@@ -60,6 +59,7 @@ const Sample = () => {
     <button 
     
     onClick={()=>{
+      setTrans(0)
       setCval(Dval)
       setDval(0);
       

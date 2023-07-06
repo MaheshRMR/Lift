@@ -4,19 +4,19 @@ import './movement.css';
 import { blue } from '@mui/material/colors';
 
 
-function Movement () {
-  const [trans,setTrans]=useState(140);
+function Movement ({trans,setTrans}) {
+  
   const pos=trans;
   return (
-    <div classname="whole" >
+    <div className="whole" >
     <ul>
     <li>
-    <Box sx={{ minWidth: 275 }}>
-        <Card variant="outlined" sx={{ width :420 ,height:160 }}>floor 4</Card>
-        <Card variant="outlined" sx={{ width :420 ,height:160 }}>floor 3</Card>
-        <Card variant="outlined" sx={{ width :420 ,height:160 }}>floor 2</Card>
-        <Card variant="outlined" sx={{ width :420 ,height:160 }}>floor 1</Card>
-        <Card variant="outlined" sx={{ width :420 ,height:160 }}>floor 0</Card>
+    <Box sx={{ minWidth: 420 , minHeight : 800}}>
+        <Card variant="outlined" sx={{ width :300 ,height:160 }}>floor 4</Card>
+        <Card variant="outlined" sx={{ width :300 ,height:160 }}>floor 3</Card>
+        <Card variant="outlined" sx={{ width :300 ,height:160 }}>floor 2</Card>
+        <Card variant="outlined" sx={{ width :300 ,height:160 }}>floor 1</Card>
+        <Card variant="outlined" sx={{ width :300 ,height:160 }}>floor 0</Card>
     </Box>
     </li>
     <li>
