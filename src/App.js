@@ -1,25 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import { TextField, Button } from '@mui/material';
+import { useState } from 'react';
+import { Routes,Route,Link, useNavigate } from 'react-router-dom';
+import Movement from './movement';
+import Sample from './Sample';
+
 
 function App() {
+  // const [name,setName]=useState('')
+  // const[password,setPassword]=useState('')
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Routes>
+        <Route exact path="/" element={<Sample />} />
+        <Route path="/movement" element={<Movement />} />
+        {/* <Route path="/config" element={<config />} /> */}
+
+      </Routes>
+
+
     </div>
+    
   );
 }
+
+
+
+
+
 
 export default App;
