@@ -4,7 +4,7 @@ import { useState } from 'react';
 import {useNavigate } from 'react-router-dom';
 import'./sample.css'
 import Movement from './movement';
-import {trans}
+
 const Sample = () => {
 
   const [Dval,setDval]=useState(0)
